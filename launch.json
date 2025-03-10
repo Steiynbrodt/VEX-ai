@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Leon/Documents/vex-vscode-projects/Gegner_Bot/include",
-      "program": "c:/Users/Leon/Documents/vex-vscode-projects/Gegner_Bot/include/build/Debug/outDebug",
+      "cwd": "c:/Users/User/Documents/vex-vscode-projects/Gegner_Bot/include",
+      "program": "c:/Users/"user"/Documents/vex-vscode-projects/Gegner_Bot/include/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
