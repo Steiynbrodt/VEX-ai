@@ -2,7 +2,7 @@
 
 using namespace vex;
 
-void rampUp(motor_group& drive, double finalSpeed)
+void rampUp( double finalSpeed)
 {
     double interval = 20;
     double rampTime = 0.5;
@@ -12,11 +12,11 @@ void rampUp(motor_group& drive, double finalSpeed)
 
     while (currentSpeed < finalSpeed)
     {
-        drive.spin(forward, currentSpeed, percent);
+        FullDrivetrain.spin(forward, currentSpeed, percent);
         currentSpeed += step;
         task::sleep(interval);
     }
 
-    drive.spin(forward, finalSpeed, percent);
+    FullDrivetrain.spin(forward, finalSpeed, percent);
 }
 

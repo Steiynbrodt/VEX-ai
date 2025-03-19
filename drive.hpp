@@ -9,6 +9,7 @@ brain Brain;
 competition Competition;
 controller Controller1 = controller(primary);
 digital_out Pneumatic1(Brain.ThreeWirePort.A);
+
 motor driveMotorRightOne = motor(PORT14, ratio18_1, false);   
 motor driveMotorLeftOne = motor(PORT16, ratio18_1, true);   
 motor driveMotorRightTwo = motor(PORT4, ratio18_1, false);
@@ -21,6 +22,7 @@ motor holer = motor(PORT5, ratio18_1, true);
 //distance DonutSensor = distance(PORT3);
 //digital_out Holer(Brain.ThreeWirePort.G);
 inertial INS = inertial(PORT3);
+vision  EYE_OF_SAURON = vision(PORT12);
 
 gps Gps1 =gps(PORT13,-110.00,05.00,mm ,270);
 gps Gps2 =gps(PORT9,110.00,05.00,mm ,90);
