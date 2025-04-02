@@ -14,10 +14,7 @@ const double WALL_THRESHOLD = 200.00;
 const double OBSTACLE_THRESHOLD = 50.00;
 const double ROBOT_WIDTH = 380;
 // Field grid parameters
-const double MIN_FIELD = -1800.0;
-const double MAX_FIELD = 1800.0;
-const double CELL_SIZE = 50.0;        // Fine grid resolution: 50 mm per cell
-const int GRID_SIZE = (int)((MAX_FIELD - MIN_FIELD) / CELL_SIZE); // e.g., 72 cells
+
 
 volatile bool robotStuck = false;  // Global flag for stuck status
 
