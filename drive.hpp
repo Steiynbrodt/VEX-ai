@@ -23,7 +23,7 @@ motor holer = motor(PORT5, ratio18_1, true);
 //digital_out Holer(Brain.ThreeWirePort.G);
 inertial INS = inertial(PORT3);
 vision  EYE_OF_SAURON = vision(PORT12);
-
+aivision AIVision1 = aivision(PORT10);
 gps Gps1 =gps(PORT13,-110.00,05.00,mm ,270);
 gps Gps2 =gps(PORT9,110.00,05.00,mm ,90);
 
