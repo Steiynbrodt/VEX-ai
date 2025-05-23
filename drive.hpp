@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <cmath>
 #include <stdbool.h>
+
 #define FMT_HEADER_ONLY
 using namespace vex;
 
@@ -10,19 +11,20 @@ competition Competition;
 controller Controller1 = controller(primary);
 digital_out Pneumatic1(Brain.ThreeWirePort.A);
 
-motor driveMotorRightOne = motor(PORT14, ratio18_1, false);   
+motor driveMotorRightOne = motor(PORT19, ratio18_1, false);   
 motor driveMotorLeftOne = motor(PORT16, ratio18_1, true);   
-motor driveMotorRightTwo = motor(PORT4, ratio18_1, false);
-motor driveMotorLeftTwo = motor(PORT11, ratio18_1, true); 
-motor driveMotorRightThree = motor(PORT21, ratio18_1, false);    
-motor driveMotorLeftThree = motor(PORT20, ratio18_1, true);
-motor intakemotorOne = motor(PORT19, ratio18_1, true);
-motor intakemotorTwo = motor(PORT15, ratio18_1, true);
-motor holer = motor(PORT5, ratio18_1, true);
+motor driveMotorRightTwo = motor(PORT5, ratio18_1, false);
+motor driveMotorLeftTwo = motor(PORT10, ratio18_1, true); 
+motor driveMotorRightThree = motor(PORT13, ratio18_1, true);    
+motor driveMotorLeftThree = motor(PORT15, ratio18_1, true);
+motor intakemotorOne = motor(PORT6, ratio18_1, true);
+motor intakemotorTwo = motor(PORT21, ratio18_1, true);
+motor holer = motor(PORT8, ratio18_1, true);
 //distance DonutSensor = distance(PORT3);
 //digital_out Holer(Brain.ThreeWirePort.G);
-inertial INS = inertial(PORT3);
-vision  EYE_OF_SAURON = vision(PORT12);
+inertial INS = inertial(PORT7);
+
+//vision  EYE_OF_SAURON = vision(PORT12);
 aivision AIVision1 = aivision(PORT10);
 gps Gps1 =gps(PORT13,-110.00,05.00,mm ,270);
 gps Gps2 =gps(PORT9,110.00,05.00,mm ,90);
